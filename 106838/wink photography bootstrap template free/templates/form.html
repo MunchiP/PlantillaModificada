@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI Phone</title>
+      <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+
+   <!--favicon-img-->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+       <!-- animacion Css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+
+  <body>
+
+    <div class="all">
+        <!-- Pre-web -->
+        <div id="preloader"> <div class="p">F O R M U L A R I O</div></div>
+        <div id="breaker"></div>
+    
+        <div class="cursor scale"></div>
+        <div class="cursor-two  scale"></div>
+    
+          <!-- 1 Cabecera -->
+            <div id="home">
+        
+                <div class="navigation3">
+                
+                <div class="logo3 home-link fade-down">
+                <a href="first.html"> AI PHONE </a>
+                </div>
+                <div class="navigation-links">
+                    <ul>
+                    <!-- opcion dos del menu -->
+                    <li class="links about-link fade-down dropdown">
+                        <a href="#0">Productos</a>
+                        <div class="dropdown-menu">
+                        <ul class="menuInterior">
+                            <li id="opcionInterior"><a href="flexible.html">Flexibles</a></li>
+                            <li id="opcionInterior"><a href="5G.html">5G</a></li>
+                            <li id="opcionInterior"><a href="Moviles.html">Móviles</a></li>
+                            <li id="opcionInterior"><a href="Corporativos.html">Corporativos</a></li>
+                        </ul>
+                        </div>
+                    </li>
+        
+                    <li class="links contact-link fade-down"><a href="form.html">Contacto</a></li>
+                    </ul>
+                </div>
+
+                </div>
+                <div class="contenedor1">
+                    <div class="izquierda">
+                
+        <!-- Modificacion para incorporar video -->
+                        <div class="imagenInformativa">
+                            <!-- <video autoplay loop muted playsinline>
+                            <source id="fondoVideo" src="images/B/contact1.mp4" type="video/mp4">
+                            </video> -->
+                           <img id="fondoInfo" src="images/B/download.jpg" alt="">
+                        </div>
+                        <div class="phone">
+                            <a href="#0" class="project-link marine-project-link">
+                                <img id="contactoImagen" src="images/C/informacion.png" alt="imagenInformacion">
+                           </a>
+                          </div>
+                    </div>
+                    <div class="derecha">
+                        <div class="formuInfo">
+                            <form >
+                                <label>Para más información </label>
+                                <label for="Nombre"> Nombre: </label>
+                                <input type="text" id="nombreUsuario">
+                                <label for="Correo"> Correo: </label>
+                                <input type="email" id="correoUsuario">
+                                <label for="Requisito"> Requisito: </label>
+                                <input type="text" id="requisitoUsuario">
+                                <button onclick="verificar()"> Enviar </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="verifica.js"> </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
+        ></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bez.js"></script>
+        <script src="js/pace.js"></script>
+        <script src="js/index.js"></script>
+        <script>
+        $(function(){
+        //marine-slideshow
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+        function nextSlide() {  
+        displaySlides(slide_index++);  
+        }  
+        function prevslide() {  
+        displaySlides(slide_index--);   
+        }  
+        function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+        slides[i].style.opacity = 0;  
+
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+
+        }
+        var next = document.getElementById('next');
+        next.addEventListener('click',nextSlide);
+
+        var prev = document.getElementById('prev');
+        prev.addEventListener('click',prevslide);
+        })
+
+        </script>
+   
+
+  </body>
+</html>
+
+
+
+</body>
+</html>

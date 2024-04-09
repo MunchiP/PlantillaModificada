@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>AI Phone</title>
+      <!--favicon-img--> 
+   <link rel="icon" type="image/png" href="images/favicon.png">
+
+   <!--favicon-img-->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+
+       <!-- animacion Css -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  </head>
+
+  <body>
+
+    <div id="all">
+             <!-- Pre-web -->
+        <div id="preloader"><div class="p">F O R M U L A R I O</div></div>
+        <div id="breaker"></div>
+
+        <div class="cursor scale"></div>
+        <div class="cursor-two  scale"></div>
+
+
+    <div class="slider">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12 p-0">
+              <div class="swiper-container parallax-slider">
+
+                <div class="contenedor">
+                    <div class="imagenInformativa">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="img-container one">
+                                  <!-- Modificacion para incorporar video -->
+                                <div class="video-background">
+                                  <video autoplay loop muted playsinline>
+                                    <source src="images/B/contact.mp4" type="video/mp4">
+                                  </video>
+                                </div>
+                                <!-- <div class="slide-text opacity">
+                                  <a href="#0" class="project-link marine-project-link">
+                                      <img class="imgPrincipal" src="images/C/Flexibles/Huawei Mate XS 2.png">
+                                      FLEXIBLES
+                                    <div class="view-project">Click y descubre más</div>
+                                 </a>
+                                </div> -->
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="obtieneInformacion">
+                        <form action=""></form>
+                    </div>
+                </div>
+                
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"
+    ></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bez.js"></script>
+    <script src="js/pace.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+       $(function(){
+    //marine-slideshow
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('prev');
+      prev.addEventListener('click',prevslide);
+  })
+
+  //forest slideshow
+
+  $(function(){
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("forest-slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('forest-next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('forest-prev');
+      prev.addEventListener('click',prevslide);
+  })
+  
+  //wildlife slideshow
+
+  $(function(){
+    var slide_index = 1;  
+    displaySlides(slide_index);  
+    function nextSlide() {  
+        displaySlides(slide_index++);  
+    }  
+    function prevslide() {  
+      displaySlides(slide_index--);   
+    }  
+    function displaySlides() {  
+        var i;  
+        var slides = document.getElementsByClassName("wildlife-slides");  
+        if (slide_index > slides.length ) { slide_index = 1 } 
+        if (slide_index < 1) { slide_index = slides.length }  
+        for (i = 0; i < slides.length; i++) {  
+            slides[i].style.opacity = 0;  
+           
+        }  
+        slides[slide_index - 1].style.opacity = 1;  
+         
+      }
+      var next = document.getElementById('wildlife-next');
+      next.addEventListener('click',nextSlide);
+
+      var prev = document.getElementById('wildlife-prev');
+      prev.addEventListener('click',prevslide);
+  })
+
+
+    //city slideshow
+
+    $(function(){
+      var slide_index = 1;  
+      displaySlides(slide_index);  
+      function nextSlide() {  
+          displaySlides(slide_index++);  
+      }  
+      function prevslide() {  
+        displaySlides(slide_index--);   
+      }  
+      function displaySlides() {  
+          var i;  
+          var slides = document.getElementsByClassName("city-slides");  
+          if (slide_index > slides.length ) { slide_index = 1 } 
+          if (slide_index < 1) { slide_index = slides.length }  
+          for (i = 0; i < slides.length; i++) {  
+              slides[i].style.opacity = 0;  
+             
+          }  
+          slides[slide_index - 1].style.opacity = 1;  
+           
+        }
+        var next = document.getElementById('city-next');
+        next.addEventListener('click',nextSlide);
+  
+        var prev = document.getElementById('city-prev');
+        prev.addEventListener('click',prevslide);
+
+      
+    })
+
+    </script>
+
+    
+  </body>
+</html>
